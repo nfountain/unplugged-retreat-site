@@ -97,10 +97,215 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ---------------- Base styles ---------------- */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: rgb(82, 113, 88);
+    /* update font-family later */
+	color: rgb(226, 227, 237);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+/* ---------------- Mobile styles ---------------- */
+
+/* --- Container / Layout --- */
+
+header, 
+main,
+footer {
+    max-width: 1200px;
+    width: 100%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* ---------------- Base Header/Footer styles ---------------- */
+
+/*** Header ***/
+
+header,
+footer {
+    background: rgb(32, 35, 34);
+}
+
+header figure a {
+
+}
+
+header figure a img {
+    
+}
+
+.header-divider {
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li {
+    font-size: 1.125em;
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+/*** Footer ***/
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.contact {
+
+}
+
+.social {
+    /* width: 100%; */
+}
+
+.copyright {
+    /* width: 100%; */
+}
+
+/* ---------------- Mobile styles - Main Page ---------------- */
+
+/*** Main - Hero Area ***/
+
+main {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 
 
+.hero-area {
+    height: 500px;
+    background: url(../img/jake-melara-30679-unsplash.jpg) rgb(82, 113, 88) no-repeat center center;
+    background-size: cover;
+}
 
+/*** Main - Aside ***/
+
+aside .form-description {
+
+}
+
+aside .form {
+    
+}
+
+aside .form text {
+    
+}
+
+aside .form button {
+    background-color: rgb(42, 66, 58);
+}
+
+/*** Main - Features Section ***/
+
+.features {
+    height: 1450px;
+    background: url(../img/rawpixel-800820-unsplash1.jpg) rgb(82, 113, 88) no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.features-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    /* is text-align needed? */
+    text-align: center;
+}
+
+.fontawesome-icon {
+    
+}
+
+.features-item-description {
+    
+}
+
+/*** Main - Reviews Section ***/
+
+.reviews div figure {
+    margin: 0;
+    padding: 0;
+}
+
+.reviews div figure img {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.reviews div article {
+
+}
+
+
+
+/***  ***/
+
+
+/* ---------------- Media Queries ---------------- */
+
+/*** Min-width 768px ***/
+@media all and (min-width: 768px) {
+
+}
+
+/*** Min-width 1200px ***/
+@media all and (min-width: 768px) {
+    
+}
 
 
 

@@ -160,23 +160,23 @@ footer {
     background: rgb(32, 35, 34);
 }
 
-/* header.content-wrapper {
-    width: 60%;
-} */
-
-header figure a {
-
+header .content-wrapper figure {
+    width: 68%;
+    margin: 10px auto;
 }
 
-header figure a img {
-    
+header .content-wrapper figure a img {
+    width: 100%;
 }
 
 .header-divider {
-
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    height: 1px;
 }
 
 header nav {
+    width: 47%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -234,11 +234,11 @@ footer .footer-content {
 }
 
 .social {
-    /* width: 100%; */
+    
 }
 
 .copyright {
-    /* width: 100%; */
+    
 }
 
 /* ---------------- Mobile styles - Main Page ---------------- */
@@ -332,8 +332,8 @@ aside .form button {
     width: 100%;
 }
 
-.reviews div article {
-
+.reviews div article h3 {
+    width: 55%;
 }
 
 

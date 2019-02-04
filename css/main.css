@@ -160,6 +160,10 @@ footer {
     background: rgb(32, 35, 34);
 }
 
+/* header.content-wrapper {
+    width: 60%;
+} */
+
 header figure a {
 
 }
@@ -195,6 +199,15 @@ header nav ul li {
 }
 
 /*** Footer ***/
+
+.footer-content {
+    width: 63%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+}
 
 footer .social {
     display: flex;
@@ -284,11 +297,11 @@ aside .form button {
 }
 
 .features .features-items {
+    width: 63%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    /* is text-align needed? */
     text-align: center;
 }
 
@@ -335,12 +348,17 @@ aside .form button {
     flex-flow: row wrap;
 }
 
+.general-contact .content-wrapper {
+    justify-content: flex-start;
+}
+
+/* don't think i need this as a flex container since it already is one, above...
 .general-contact {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-}
+} */
 
 /* ---------------- Mobile styles - FAQ Page ---------------- */
 

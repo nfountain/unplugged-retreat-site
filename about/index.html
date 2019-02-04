@@ -66,23 +66,23 @@
     <section class="general-contact">
       <div class="content-wrapper">
         <h2>Contact us, because you all need this.</h2>
-        <address class="contact-content">
+        <div class="contact-content">
           <div>
             <h4>General Information</h4>
-            <p>
+            <address>
               333 Main St. Lake Geneva, WI 53147<br>
               <a href="tel:+5555555555">555-555-5555</a><br>
               <a href="mailto:hello@unplugged.com">hello@unplugged.com</a>
-            </p>
-          </div>
+            </address>
+          </div> <!-- general info div; separates chat with facilitator div -->
           <div>
             <h4>Chat with a Facilitator</h4>
-            <p>
+            <address>
               <a href="tel:+5555555555">555-555-5555</a><br>
               <a href="mailto:facilitator@unplugged.com">facilitator@unplugged.com</a>
-            </p>
+            </address>
           </div>
-        </address> <!-- end of contact-content div -->
+        </div> <!-- end of contact-content div -->
       </div> <!-- end of content-wrapper div -->
     </section>
 
@@ -91,14 +91,16 @@
   <footer>
     <div class="content-wrapper">
       <div class="footer-content">
-        <address class="contact">
+        <div class="contact">
           <h4>Contact</h4>
-          <p>
+          <address>
             <a href="tel:+5555555555">555-555-5555</a><br>
             <a href="mailto:hello@unplugged.com">hello@unplugged.com</a>
-          </p>
-        </address>
-      
+          </address>
+          <!-- address content updated to be consistent with MDN docs, accessed 2.4.19. 
+          div's and classes adjusted, as address had been used as a structural element bot here and above.
+          https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address -->
+        </div>      
         <div class="social">
           <h4>Social</h4>
           <!--add links and icons here: facebook, twitter, instagram-->

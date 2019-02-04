@@ -138,6 +138,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 .content-wrapper {
@@ -171,12 +172,20 @@ header figure a img {
 
 }
 
-header nav ul {
+header nav {
     display: flex;
     justify-content: space-around;
-    flex-flow: row nowrap;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header nav ul {
+    /* margin: 0; */
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style-type: none;
-    margin: 0;
 }
 
 header nav ul li {
@@ -187,7 +196,20 @@ header nav ul li {
 
 /*** Footer ***/
 
-.footer-content {
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+footer .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,21 +234,25 @@ header nav ul li {
 
 main {
     font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
 }
-
-
 
 .hero-area {
     height: 500px;
     background: url(../img/jake-melara-30679-unsplash.jpg) rgb(82, 113, 88) no-repeat center center;
     background-size: cover;
+    /* does this need the display flex, etc? */
 }
 
 /*** Main - Aside ***/
+
+/* is display flex needed below, like noted in class notes? */
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 aside .form-description {
 
@@ -257,7 +283,7 @@ aside .form button {
     flex-flow: row wrap;
 }
 
-.features-items {
+.features .features-items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,6 +302,13 @@ aside .form button {
 
 /*** Main - Reviews Section ***/
 
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 .reviews div figure {
     margin: 0;
     padding: 0;
@@ -291,9 +324,34 @@ aside .form button {
 }
 
 
+/* ---------------- Mobile styles - About Page ---------------- */
 
-/***  ***/
+/*** Main - Mission Area ***/
 
+.mission {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.general-contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* ---------------- Mobile styles - FAQ Page ---------------- */
+
+/*** Main - FAQ Area ***/
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 /* ---------------- Media Queries ---------------- */
 

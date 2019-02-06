@@ -351,17 +351,21 @@ aside .form input {
     padding: 16px;
 }
 
-aside .form input[type="text"] {
-    width: 90%;
+aside .form input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
     background-color: rgb(226, 227, 237);
-    color: #999;
+    color: rgb(42, 66, 58);
     font-style: italic;
 }
 
-aside .form input[type="button"] {
+aside .form input[type=button] {
     width: 100%;
+    margin-top: 20px;
     background-color: rgb(42, 66, 58);
-    border: ; /* Adjust later */
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
     color: rgb(226, 227, 237);
     text-transform: uppercase;
 }

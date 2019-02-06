@@ -104,7 +104,6 @@ html {
 }
 
 body {
-    background: rgb(82, 113, 88);
     /* update font-family later */
 	color: rgb(226, 227, 237);
     font-family: Arial, Helvetica, sans-serif;
@@ -162,7 +161,7 @@ footer {
 
 .content-wrapper {
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
     font-size: 1em;
     display: flex;
     justify-content: center;
@@ -236,6 +235,7 @@ header nav ul li {
 
 .footer-content {
     width: 63%;
+    margin: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,10 +243,18 @@ header nav ul li {
     text-align: center;
 }
 
+footer .contact,
 footer .social {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
+}
+
+.contact h4,
+.social h4 {
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 footer .social-icons {
@@ -256,16 +264,10 @@ footer .social-icons {
     flex-flow: row nowrap;
 }
 
-footer .footer-content {
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
 footer .copyright {
+    width: 90%;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* ---------------- Mobile styles - Main Page ---------------- */
@@ -294,6 +296,7 @@ main .content-wrapper {
 
 /* is display flex needed below, like noted in class notes? */
 aside {
+    background-color: rgb(82, 113, 88);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,6 +368,7 @@ p .features-item-description {
 /*** Main - Reviews Section ***/
 
 .reviews {
+    background-color: rgb(42, 66, 58);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,6 +399,23 @@ p .features-item-description {
 /*** Main - Mission Area ***/
 
 .mission {
+    background-color: rgb(82, 113, 88);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.map {
+    width: 100%;
+    /* place-holder color & height */
+    background-color: rgb(82, 113, 88);
+    height: 300px;
+}
+
+.general-contact {
+    width: 100%;
+    background-color: rgb(42, 66, 58);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -405,19 +426,32 @@ p .features-item-description {
     justify-content: flex-start;
 }
 
-/* don't think i need this as a flex container since it already is one, above...
-.general-contact {
+.contact-content {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-} */
+}
+
+.general-info,
+.facilitator {
+    width: 100%;
+}
+
+.general-info,
+.facilitator,
+.general-info address,
+.facilitator address {
+    margin-top: 16px;
+}
+
 
 /* ---------------- Mobile styles - FAQ Page ---------------- */
 
 /*** Main - FAQ Area ***/
 
 .faq {
+    background-color: rgb(82, 113, 88);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -516,6 +550,7 @@ p .features-item-description {
 
 /*** Min-width 768px ***/
 @media all and (min-width: 768px) {
+    /*** Base styles/header & footer styles ***/
     .content-wrapper {
         width: 82%;
         margin: 100px auto;
@@ -533,6 +568,22 @@ p .features-item-description {
     header nav {
         width: 25%;
     }
+    .footer-content {
+        justify-content: space-between;
+        width: 80%;
+    }
+    footer .contact {
+        width: 25%;
+    }
+    footer .social {
+        width: 31%;
+    }
+    .contact h4,
+    .social h4 {
+        padding-bottom: 40px;
+    }
+
+    /*** media query 768px - Main page ***/
     .hero-area h1 {
         width: 70%;
     }
@@ -564,26 +615,67 @@ p .features-item-description {
     .reviews h2 {
         width: 77%;
     }
-    .reviews div figure {
-        width: 48%;
-    }
+    .reviews div figure,
     .reviews div article {
         width: 48%;
     }
-    .footer-content {
+
+    /*** media query 768px - About page ***/
+    .mission .content-wrapper .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    .mission-content p {
+        width: 46%;
+        padding-top: 50px;
+    }
+    .general-info,
+    .facilitator {
+        width: 40%;
+        margin-top: 50px;
+    }
+    .general-info address,
+    .facilitator address {
+        margin-top: 18px;
+    }
+    .contact-content {
+        width: 100%;
         justify-content: space-between;
     }
-    .contact {
-        width: 25%;
+
+    /*** media query 768px - About page ***/
+    .faq .content-wrapper {
+        justify-content: space-between;
+        align-items: flex-start;
     }
-    .social {
-        width: 31%;
+    .faq .content-wrapper h2 {
+        width: 100%;
+    }
+    .faq-content {
+        width: 46%;
+        margin-top: 40px;
     }
 }
 
 /*** Min-width 1200px ***/
 @media all and (min-width: 1200px) {
-    
+    /*** Base styles/header & footer styles ***/
+    .content-wrapper {
+        width: 80%;
+    }
+    .footer-content {
+        width: 88%;
+    }
+    .mission h2 {
+        width: 91%;
+    }
+    .general-info,
+    .facilitator {
+        width: 35%;
+        margin-top: 50px;
+    }
 }
 
 

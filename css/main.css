@@ -124,22 +124,13 @@ h4 {
 }
 h1 {
     font-size: 2.25em;
-    /* font-size: 3em; */
-    /* font-size: 3.75em; */
-    /* line-height: 3em;  */
 }
 h2 {
     font-size: 1.875em;
-    /* font-size: 2.25em; */
-    /* font-size: 2.25em; */
-    /* line-height: 3em; */
 }
 h3,
 h4 {
     font-size: 1.125em;
-    /* font-size: 1.5em; */
-    /* font-size: 1.875em; */
-    /* line-height: 1.875em; */
 }
 
 p,
@@ -148,8 +139,6 @@ address {
     font-style: normal;
     font-size: 0.875em;
     line-height: 1.285;
-    /* font-size: 0.875em; */
-    /* font-size: 1.125em; */
 }
 
 a {
@@ -454,10 +443,19 @@ p .features-item-description {
 }
 
 .map {
+    position: relative;
     width: 100%;
-    /* place-holder color & height */
-    background-color: rgb(82, 113, 88);
-    height: 300px;
+    padding-bottom: 93%; /* sets aspect ratio for container */
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .general-contact {

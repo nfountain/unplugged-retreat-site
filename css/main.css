@@ -446,7 +446,7 @@ p .features-item-description {
     position: relative;
     width: 100%;
     padding-bottom: 93%; /* sets aspect ratio for container */
-    height: 0;
+    height: 1px;
     overflow: hidden;
 }
 

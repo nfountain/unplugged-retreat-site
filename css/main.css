@@ -284,9 +284,9 @@ footer .social-icons p {
 
 footer .social-icons i {
     background-color: rgb(82, 113, 88);
-    margin: 20px;
-    padding: 12px;
-    font-size: 2em;
+    margin: 0 20px;
+    padding: 8px;
+    font-size: 24px;
     text-align: center;
     border: 1px solid rgb(82, 113, 88);
     border-radius: 50%;
@@ -636,11 +636,8 @@ aside .form input[type=button] {
         margin-bottom: 0;
     }
     footer .social {
-        width: 31%;
-    }
-    .contact h4,
-    .social h4 {
-        padding-bottom: 40px;
+        justify-content: space-between;
+        width: 48%;
     }
 
     /*** media query 768px - Main page ***/
@@ -752,6 +749,12 @@ aside .form input[type=button] {
     .footer-content {
         width: 88%;
         justify-content: space-between;
+    }
+    footer .contact {
+        width: 23%;
+    }
+    footer .social {
+        width: 32%;
     }
 
     /* Main - Hero */

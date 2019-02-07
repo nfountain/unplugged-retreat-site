@@ -362,10 +362,8 @@ aside .form input[type=button] {
 /*** Main - Features Section ***/
 
 .features {
-    height: 1450px;
     background: url(../img/rawpixel-800820-unsplash1.jpg) rgb(82, 113, 88) no-repeat center center;
     background-size: cover;
-
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -387,12 +385,9 @@ aside .form input[type=button] {
     margin: 30px 0;
 }
 
-p .fontawesome-icon {
-    
-}
-
-p .features-item-description {
-    
+.features .fontawesome-icon i {
+    font-size: 3.75em;
+    margin-bottom: 40px;
 }
 
 /*** Main - Reviews Section ***/
@@ -662,9 +657,6 @@ p .features-item-description {
     }
 
     /* Features */
-    .features {
-        height: 860px;
-    }
     .features .features-items {
         width: 82%;
         justify-content: space-around;

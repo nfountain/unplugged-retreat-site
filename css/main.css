@@ -138,7 +138,7 @@ address {
     margin: 0;
     font-style: normal;
     font-size: 0.875em;
-    line-height: 1.285;
+    /* line-height: 1.285; */
 }
 
 a {
@@ -639,6 +639,10 @@ aside .form input[type=button] {
     }
 
     /* Footer */
+    footer .content-wrapper {
+        margin: 90px auto;
+    }
+
     .footer-content {
         justify-content: space-between;
         width: 78%;
@@ -650,6 +654,9 @@ aside .form input[type=button] {
     footer .social {
         justify-content: space-between;
         width: 48%;
+    }
+    footer .copyright {
+        margin: 10px auto;
     }
 
     /*** media query 768px - Main page ***/
@@ -667,16 +674,26 @@ aside .form input[type=button] {
         justify-content: space-between;
         margin: 50px 0;
     }
-    .form-description {
+    aside .form-description {
         width: 40%;
         margin: 0;
     }
-    .form {
+    aside .form {
         width: 46%;
         margin: 0;
     }
+    aside .form h4 {
+        margin: 0 0 16px 0;
+    }
 
     /* Features */
+    .features .content-wrapper {
+        margin: 100px auto 50px auto;
+    }
+    .features h2 {
+        margin-bottom: 30px;
+        width: 96%
+    }
     .features .features-items {
         width: 82%;
         justify-content: space-around;
@@ -684,15 +701,16 @@ aside .form input[type=button] {
     }
     .features .features-items article {
         width: 40%;
+        margin: 0 0 50px 0;
     }
+
+    /* Reviews */
     .reviews .content-wrapper {
         justify-content: space-between;
         margin: 50px auto 100px auto;
     }
-
-    /* Reviews */
     .reviews h2 {
-        width: 77%;
+        width: 70%;
         margin-bottom: 25px;
     }
     .reviews figure {
@@ -702,8 +720,14 @@ aside .form input[type=button] {
         width: 48%;
         margin-top: 0;
     }
+    .reviews article h4 {
+        width: 75%
+    }
 
     /*** media query 768px - About page ***/
+    .mission h2 {
+        width: 95%;
+    }
     .mission-content {
         display: flex;
         justify-content: space-between;
@@ -724,6 +748,9 @@ aside .form input[type=button] {
     .contact-content h4 {
         margin: 20px 0;
     }
+    .general-contact h2 {
+        width: 75%;
+    }
     .general-info,
     .facilitator {
         width: 40%;
@@ -738,7 +765,7 @@ aside .form input[type=button] {
         width: 100%;
     }
     .faq-content {
-        width: 46%;
+        width: 47%;
     }
 }
 

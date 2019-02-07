@@ -702,6 +702,9 @@ p .features-item-description {
         width: 47%;
         margin-top: 36px;
     }
+    .map {
+        padding-bottom: 46%;
+    }
     .contact-content {
         width: 100%;
         justify-content: space-between;
@@ -769,6 +772,9 @@ p .features-item-description {
     }
     .mission-content p {
         width: 45%;
+    }
+    .map {
+        padding-bottom: 38%;
     }
     .contact-content h4 {
         margin: 40px 0;

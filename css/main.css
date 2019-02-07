@@ -762,6 +762,25 @@ aside .form input[type=button] {
         width: 70%;
     }
 
+    /* Main - Form */
+    aside .content-wrapper {
+        width: 67%;
+    }
+
+    /* Main - Features section */
+    .features h2 {
+        width: 80%;
+        /* width: 85%; per PSD measurements */
+    }
+    .features .features-items {
+        justify-content: space-between;
+        width: 85%;
+    }
+    .features .features-items article {
+        margin: 30px 20px;
+        width: 23%;
+    }
+
     /* Main - Reviews */
     .reviews figure {
         width: 48%;

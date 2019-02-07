@@ -119,7 +119,7 @@ h2,
 h3,
 h4 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
 }
 h1 {
@@ -149,6 +149,7 @@ a {
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
     padding-left: 0;
 }
 
@@ -199,9 +200,9 @@ footer {
     flex-flow: row wrap;
 }
 
-header {
+/* header {
     padding: 15px 0;
-} 
+}  */
 
 header .content-wrapper {
     margin: 0;
@@ -209,6 +210,7 @@ header .content-wrapper {
 
 header .content-wrapper figure {
     width: 68%;
+    padding: 15px;
 }
 
 .header-divider {
@@ -227,6 +229,7 @@ header nav {
 
 header nav ul {
     width: 100%;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -334,20 +337,28 @@ aside {
     flex-flow: row wrap;
 }
 
-aside h4 {
-    margin: 20px 0;
+aside .content-wrapper {
+    margin: 28px auto;
 }
 
-.form-description {
+aside p {
+    margin: 12px 0;
+}
+
+/* .form-description {
     margin: 30px 0 8px 0;
+} */
+
+aside .form h4 {
+    margin: 16px 0;
 }
 
 .form {
-    margin: 19px 0 45px 0;
+    /* margin: 19px 0 45px 0; */
 }
 
 aside .form input {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     padding: 16px;
 }
 
@@ -361,7 +372,7 @@ aside .form input[type=text] {
 
 aside .form input[type=button] {
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: rgb(42, 66, 58);
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -381,7 +392,8 @@ aside .form input[type=button] {
 }
 
 .features h2 {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    width: 96%;
 }
 
 .features .features-items {

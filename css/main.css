@@ -112,6 +112,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 h1,
@@ -164,7 +169,7 @@ img {
 
 /* --- Container / Layout --- */
 
-header, 
+header,
 main,
 footer {
     max-width: 1200px;
@@ -174,6 +179,11 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 .content-wrapper {
@@ -184,7 +194,32 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
+
+/* IE fix to prevent overflow, as flex items have been overflowing the .content-wrapper container */
+
+/* .content-wrapper article,
+.content-wrapper div,
+.content-wrapper figure,
+.content-wrapper nav,
+.content-wrapper h1,
+.content-wrapper h2,
+.content-wrapper h3,
+.content-wrapper h4,
+.content-wrapper p,
+.content-wrapper address {
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
+} */
+
+
 
 /* ---------------- Base Header/Footer styles ---------------- */
 
@@ -197,6 +232,11 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 /* header {
@@ -224,6 +264,12 @@ header nav {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-pack: justify;
+    /* -ms-flex-line-pack: stretch; */
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 header nav ul {
@@ -232,6 +278,10 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: stretch;
+    -ms-flex-align: center;
 }
 
 header nav ul li {
@@ -245,11 +295,16 @@ header nav ul li {
 
 .footer-content {
     width: 63%;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
-    text-align: center;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: center;
+    -ms-flex-align: start;
+    -ms-flex-flow: row wrap;
 }
 
 footer .contact,
@@ -258,6 +313,11 @@ footer .social {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 footer .contact {
@@ -276,12 +336,21 @@ footer .social-icons {
     justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: stretch;
+    -ms-flex-align: center;
+    -ms-flex-flow: row nowrap;
 }
 
 footer .social-icons p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: stretch;
+    -ms-flex-align: center;
 }
 
 footer .social-icons i {
@@ -318,10 +387,17 @@ main {
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: center;
+    -ms-flex-align: start;
+    -ms-flex-flow: row wrap;
 }
 
 main .content-wrapper {
     justify-content: center;
+
+    -ms-flex-line-pack: center;
 }
 
 
@@ -334,6 +410,11 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 aside .content-wrapper {
@@ -388,6 +469,10 @@ aside .form input[type=button] {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: center;
+    -ms-flex-flow: row wrap;
 }
 
 .features h2 {
@@ -397,10 +482,14 @@ aside .form input[type=button] {
 
 .features .features-items {
     width: 63%;
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    text-align: center;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: center;
+    -ms-flex-flow: row wrap;
 }
 
 .features .features-section {
@@ -419,10 +508,17 @@ aside .form input[type=button] {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: center;
+    -ms-flex-flow: row wrap;
 }
 
 .reviews .content-wrapper {
     align-items: flex-start;
+
+    -ms-flex-align: start;
+    /* -ms-flex-item-align: start; */
 }
 
 .reviews h2 {
@@ -453,6 +549,11 @@ aside .form input[type=button] {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: start;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 .mission-content p {
@@ -483,10 +584,17 @@ aside .form input[type=button] {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: start;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 .general-contact .content-wrapper {
     justify-content: flex-start;
+
+    -ms-flex-line-pack: start;
 }
 
 .contact-content {
@@ -494,6 +602,11 @@ aside .form input[type=button] {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: start;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 .general-info,
@@ -516,6 +629,11 @@ aside .form input[type=button] {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    display: -ms-flexbox;
+    -ms-flex-line-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: row wrap;
 }
 
 .faq-content {
@@ -616,7 +734,7 @@ aside .form input[type=button] {
 
 /*** Min-width 768px ***/
 @media all and (min-width: 768px) {
-    
+
     /* Base styles */
     h1 {
         font-size: 3em;
@@ -640,6 +758,10 @@ aside .form input[type=button] {
     }
     header .content-wrapper {
         justify-content: space-between;
+
+        -ms-flex-line-pack: distribute;
+        /* do i need this?? */
+        -ms-flex-flow: row nowrap;
     }
     header .content-wrapper figure {
         width: 35%;
@@ -656,6 +778,8 @@ aside .form input[type=button] {
     .footer-content {
         justify-content: space-between;
         width: 78%;
+
+        -ms-flex-line-pack: stretch;
     }
     footer .contact {
         width: 25%;
@@ -664,6 +788,8 @@ aside .form input[type=button] {
     footer .social {
         justify-content: space-between;
         width: 48%;
+
+        -ms-flex-line-pack: stretch;
     }
     footer .copyright {
         margin: 10px auto;
@@ -673,10 +799,15 @@ aside .form input[type=button] {
     main .content-wrapper {
         justify-content: flex-start;
         align-items: flex-start;
+
+        -ms-flex-line-pack: start;
+        -ms-flex-align: start;
     }
     .hero-area {
         justify-content: flex-start;
         height: 600px;
+
+        -ms-flex-line-pack: start;
     }
     .hero-area h1 {
         width: 85%;
@@ -684,6 +815,8 @@ aside .form input[type=button] {
     aside .content-wrapper {
         justify-content: space-between;
         margin: 50px 0;
+
+        -ms-flex-line-pack: stretch;
     }
     aside .form-description {
         width: 40%;
@@ -709,6 +842,8 @@ aside .form input[type=button] {
         width: 82%;
         justify-content: space-around;
         margin: 0 auto;
+
+        -ms-flex-line-pack: distribute;
     }
     .features .features-items .features-section {
         width: 40%;
@@ -719,6 +854,8 @@ aside .form input[type=button] {
     .reviews .content-wrapper {
         justify-content: space-between;
         margin: 50px auto 100px auto;
+
+        -ms-flex-line-pack: stretch;
     }
     .reviews h2 {
         width: 77%;
@@ -745,6 +882,11 @@ aside .form input[type=button] {
         justify-content: space-between;
         align-items: center;
         flex-flow: row wrap;
+
+        display: -ms-flexbox;
+        -ms-flex-line-pack: stretch;
+        -ms-flex-align: center;
+        -ms-flex-flow: row wrap;
     }
     .mission-content p {
         width: 47%;
@@ -756,6 +898,8 @@ aside .form input[type=button] {
     .contact-content {
         width: 100%;
         justify-content: space-between;
+
+        -ms-flex-line-pack: stretch;
     }
     .general-contact h2 {
         width: 80%;
@@ -769,6 +913,9 @@ aside .form input[type=button] {
     .faq .content-wrapper {
         justify-content: space-between;
         align-items: flex-start;
+
+        -ms-flex-line-pack: stretch;
+        -ms-flex-align: start;
     }
     .faq .content-wrapper h2 {
         width: 100%;
@@ -819,6 +966,8 @@ aside .form input[type=button] {
     .footer-content {
         width: 88%;
         justify-content: space-between;
+
+        -ms-flex-line-pack: stretch;
     }
     footer .contact {
         width: 23%;
@@ -839,6 +988,8 @@ aside .form input[type=button] {
     /* Main - Form */
     aside .content-wrapper {
         justify-content: space-around;
+
+        -ms-flex-line-pack: distribute;
     }
     aside .form-description,
     aside .form {
@@ -847,8 +998,10 @@ aside .form input[type=button] {
 
     /* Main - Features section */
     .features .features-items {
-        justify-content: space-between;
         width: 85%;
+        justify-content: space-between;
+
+        -ms-flex-line-pack: stretch;
     }
     .features .features-items .features-section {
         margin: 30px 20px;
@@ -869,7 +1022,7 @@ aside .form input[type=button] {
         width: 46%;
         padding-right: 20px;
     }
-    
+
     /*** About & FAQ pages ***/
     .mission h2 {
         font-size: 3em;

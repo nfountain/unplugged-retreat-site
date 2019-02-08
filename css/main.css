@@ -98,6 +98,12 @@ textarea {
    ========================================================================== */
 
 /* ---------------- Base styles ---------------- */
+/* 
+ * Note, all margin:auto were replaced with 0 or percentages
+ * to address IE bug that renders the whole margin on the left
+ * of the document.
+ * https://www.w3.org/TR/css-flexbox-1/#auto-margins
+*/
 
 html {
     font-size: 16px;
@@ -108,7 +114,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     margin: 0;
-    /* margin: 0 auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +195,6 @@ footer {
 .content-wrapper {
     width: 90%;
     margin: 50px 5%;
-    /* margin: 50px auto; */
     font-size: 1em;
     display: flex;
     justify-content: center;
@@ -202,25 +206,6 @@ footer {
     -ms-flex-align: center;
     -ms-flex-flow: row wrap;
 }
-
-/* IE fix to prevent overflow, as flex items have been overflowing the .content-wrapper container */
-
-/* .content-wrapper article,
-.content-wrapper div,
-.content-wrapper figure,
-.content-wrapper nav,
-.content-wrapper h1,
-.content-wrapper h2,
-.content-wrapper h3,
-.content-wrapper h4,
-.content-wrapper p,
-.content-wrapper address {
-    display: -ms-flexbox;
-    -ms-flex-pack: center;
-    -ms-flex-align: center;
-    -ms-flex-flow: row wrap;
-} */
-
 
 
 /* ---------------- Base Header/Footer styles ---------------- */
@@ -240,10 +225,6 @@ footer {
     -ms-flex-align: center;
     -ms-flex-flow: row wrap;
 }
-
-/* header {
-    padding: 15px 0;
-}  */
 
 header .content-wrapper {
     margin: 0;
@@ -269,7 +250,6 @@ header nav {
 
     display: -ms-flexbox;
     -ms-flex-pack: justify;
-    /* -ms-flex-line-pack: stretch; */
     -ms-flex-align: center;
     -ms-flex-flow: row wrap;
 }
@@ -421,23 +401,14 @@ aside {
 
 aside .content-wrapper {
     margin: 28px
-    /* margin: 28px auto; */
 }
 
 aside p {
     margin: 12px 0;
 }
 
-/* .form-description {
-    margin: 30px 0 8px 0;
-} */
-
 aside .form h4 {
     margin: 16px 0;
-}
-
-.form {
-    /* margin: 19px 0 45px 0; */
 }
 
 aside .form input {
@@ -521,7 +492,6 @@ aside .form input[type=button] {
     align-items: flex-start;
 
     -ms-flex-align: start;
-    /* -ms-flex-item-align: start; */
 }
 
 .reviews h2 {
@@ -753,7 +723,6 @@ aside .form input[type=button] {
     .content-wrapper {
         width: 82%;
         margin: 100px 9%;
-        /* margin: 100px auto; */
     }
 
     /* Header */
@@ -778,7 +747,6 @@ aside .form input[type=button] {
     /* Footer */
     footer .content-wrapper {
         margin: 90px 9%;
-        /* margin: 90px auto; */
     }
     .footer-content {
         justify-content: space-between;
@@ -798,7 +766,6 @@ aside .form input[type=button] {
     }
     footer .copyright {
         margin: 10px 0;
-        /* margin: 10px auto; */
     }
 
     /*** media query 768px - Main page ***/
@@ -839,7 +806,6 @@ aside .form input[type=button] {
     /* Features */
     .features .content-wrapper {
         margin: 100px 9% 50px 9%;
-        /* margin: 100px auto 50px auto; */
     }
     .features h2 {
         margin-bottom: 30px;
@@ -849,7 +815,6 @@ aside .form input[type=button] {
         width: 82%;
         justify-content: space-around;
         margin: 0 9%;
-        /* margin: 0 auto; */
 
         -ms-flex-line-pack: distribute;
     }
@@ -862,7 +827,6 @@ aside .form input[type=button] {
     .reviews .content-wrapper {
         justify-content: space-between;
         margin: 50px 9% 100px 9%;
-        /* margin: 50px auto 100px auto; */
 
         -ms-flex-line-pack: stretch;
     }
@@ -973,7 +937,6 @@ aside .form input[type=button] {
     /* Footer */
     footer .content-wrapper {
         margin: 100px 10% 90px 10%;
-        /* margin: 100px auto 90px auto; */
     }
     .footer-content {
         width: 88%;
@@ -1008,7 +971,7 @@ aside .form input[type=button] {
         width: 33%;
     }
 
-    /* Main - Features section */
+    /* Main - Features */
     .features .features-items {
         width: 85%;
         justify-content: space-between;
@@ -1023,7 +986,6 @@ aside .form input[type=button] {
     /* Main - Reviews */
     .reviews .content-wrapper {
         margin: 100px 10%;
-        /* margin: 100px auto; */
     }
     .reviews h2 {
         margin-bottom: 100px;
@@ -1036,7 +998,7 @@ aside .form input[type=button] {
         padding-right: 20px;
     }
 
-    /*** About & FAQ pages ***/
+    /*** About page ***/
     .mission h2 {
         font-size: 3em;
         width: 89%;
@@ -1057,6 +1019,7 @@ aside .form input[type=button] {
         width: 46%;
     }
 
+    /*** FAQ page ***/
     .faq h2 {
         font-size: 3em;
     }
